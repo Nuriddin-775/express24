@@ -1,0 +1,23 @@
+$color_white: #fff;
+
+// Font family
+$font-family-primary: 'Inter', sans-serif;
+
+// Flex
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
