@@ -1,5 +1,5 @@
-import UniversalCarousel from './universalCarousel';
-import './main.scss';
+import UniversalCarousel from '..';
+import '../main.scss';
 
 function DiscountCarousel() {
   return (

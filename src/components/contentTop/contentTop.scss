@@ -1,0 +1,27 @@
+@import 'src/styles/variables.scss';
+
+.contentTop {
+  @include flex-space-between;
+  margin-bottom: 16px !important;
+
+  h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color_black;
+  }
+  p {
+    font-size: 16px;
+    color: $color_grey;
+  }
+  div {
+    @include flex;
+    gap: 4px;
+    path {
+      fill: $color_grey;
+    }
+    .arrow-right-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

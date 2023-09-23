@@ -1,4 +1,4 @@
-import { IProps } from 'src/types';
+import { IProps } from './type';
 
 function UniversalCarousel({ children }: IProps) {
   return <div className="universalCaraousel">{children}</div>;

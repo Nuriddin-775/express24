@@ -1,0 +1,42 @@
+@import 'src/styles/variables.scss';
+
+.universalCaraousel {
+  gap: 12px;
+  display: flex;
+  padding: 0 16px;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    height: 0;
+    visibility: hidden;
+  }
+  margin-bottom: 24px;
+
+  .diskountCarousel {
+    &__item {
+      width: 180px;
+      height: 120px;
+      flex-shrink: 0;
+      border-radius: 12px;
+    }
+  }
+}
+.shopsCarousel {
+  img {
+    width: 152px;
+    height: 86px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    margin-bottom: 4px;
+  }
+  p,
+  span {
+    @include line-clamp1;
+  }
+  p {
+    font-size: 16px;
+  }
+  span {
+    font-size: 12px;
+    color: $color_grey;
+  }
+}
