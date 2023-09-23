@@ -1,18 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Header from './header';
 import './home.scss';
 import PrimaryCarousel from './primaryCarousel';
+import { GetShops } from 'src/utils';
 
 function Home() {
+  const [shops, setShops] = useState([]);
+  const GetShopsList = async () => {
+    console.log(await GetShops());
+  };
   useEffect(() => {
-    fetch(
-      `https://api.express24.uz/client/v5/catalog/stores?offset=0&latitude=41.311191&longitude=69.279776&limit=21&rootCategoryId=1`
-    )
-      .then((res) => res.json())
-      .then((val) => {
-        console.log(val?.list);
-      });
+    GetShopsList();
   }, []);
+
   return (
     <div className="home container">
       <Header />
