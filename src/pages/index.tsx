@@ -4,7 +4,7 @@ import PrimaryCarousel from './primaryCarousel';
 
 function Home() {
   return (
-    <div className="home container">
+    <div className="home">
       <Header />
       <PrimaryCarousel />
     </div>

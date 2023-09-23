@@ -3,4 +3,7 @@
 .header {
   margin-bottom: 10px;
   background-color: red;
+  height: 44.8px;
+  padding: 0 14px;
+  @include flex;
 }
