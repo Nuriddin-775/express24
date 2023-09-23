@@ -1,4 +1,4 @@
-import { ArrowRightIcon, LocationIcon } from '../../assets/svg/index';
+import { ArrowRightIcon, LocationIcon } from 'src/assets/svg';
 import './header.scss';
 
 function Header() {

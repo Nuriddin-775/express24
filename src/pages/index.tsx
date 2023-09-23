@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Header from './header';
 import './home.scss';
-import PrimaryCarousel from './primaryCarousel';
 import { GetShops } from 'src/utils';
 
 function Home() {
@@ -16,7 +15,6 @@ function Home() {
   return (
     <div className="home">
       <Header />
-      <PrimaryCarousel />
     </div>
   );
 }
