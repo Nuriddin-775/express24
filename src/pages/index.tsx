@@ -2,21 +2,27 @@ import { useEffect, useState } from 'react';
 import Header from './header';
 import './home.scss';
 import PrimaryCarousel from './primaryCarousel';
-import { GetShops } from 'src/utils';
+import { GetProducts, GetShops } from 'src/utils';
+import DiscountCarousel from 'src/components/carousel/discountCarousel';
 
 function Home() {
   const [shops, setShops] = useState([]);
-  const GetShopsList = async () => {
-    console.log(await GetShops());
+  const [products, setProducts] = useState([]);
+
+  const GetList = async () => {
+    setShops(await GetShops());
+    setProducts(await GetProducts());
   };
+
   useEffect(() => {
-    GetShopsList();
+    GetList();
   }, []);
 
   return (
-    <div className="home container">
+    <div className="home">
       <Header />
-      <PrimaryCarousel />
+
+      <DiscountCarousel />
     </div>
   );
 }
