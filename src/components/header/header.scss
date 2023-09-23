@@ -2,5 +2,18 @@
 
 .header {
   margin-bottom: 10px;
-  background-color: red;
+  height: 44.8px;
+  padding: 0 14px;
+  @include flex;
+
+  .arrow-right-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 0 8px 0 5px;
+    @include line-clamp1;
+  }
 }

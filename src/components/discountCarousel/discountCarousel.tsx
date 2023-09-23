@@ -1,6 +1,6 @@
-import UniversalCarousel from './universalCarousel';
+import UniversalCarousel from '..';
+import { HotNews } from '../carousel/const';
 import './main.scss';
-import { HotNews } from './const';
 
 function DiscountCarousel() {
   return (

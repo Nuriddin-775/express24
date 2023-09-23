@@ -1,4 +1,6 @@
 $color_white: #fff;
+$color_grey: #8e8e93;
+$color_black: #1a1a18;
 
 // Font family
 $font-family-primary: 'Inter', sans-serif;
@@ -20,4 +22,11 @@ $font-family-primary: 'Inter', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin line-clamp1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
