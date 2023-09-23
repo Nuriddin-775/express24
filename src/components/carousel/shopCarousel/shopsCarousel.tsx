@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { GetShops } from 'src/utils';
 import UniversalCarousel from '..';
-import { Ishop } from '../type';
-import '../main.scss';
-import ContentTop from '../contentTop';
+import { Ishop } from '../../type';
+import '../caraousel.scss';
+import ContentTop from '../../contentTop';
 
 function ShopsCarousel() {
   const [shops, setShops] = useState<Ishop[]>([]);
