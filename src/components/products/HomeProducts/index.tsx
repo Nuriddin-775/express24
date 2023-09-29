@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import MainProduct from '../MainProduct';
 import { GetProducts } from 'src/utils';
 
@@ -14,7 +14,7 @@ function HomeProducts() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <MainProduct />
     </div>
   );

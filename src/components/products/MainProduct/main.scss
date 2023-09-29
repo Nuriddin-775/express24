@@ -1,3 +1,96 @@
+@import 'src/styles/variables.scss';
+
 .mainProduct {
   width: 100%;
+  border-radius: 16px;
+  background-color: $color_white;
+  overflow: hidden;
+  margin-bottom: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  &-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-info {
+    margin: 12px;
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    p {
+      font-size: 15px;
+      color: $color_text_grey;
+    }
+  }
+
+  &-footer {
+    margin: 12px;
+    @include flex;
+    gap: 6px;
+
+    & > div:first-child {
+      background-color: $color_light_grey;
+    }
+    & > div:last-child {
+      background-color: $color_green;
+      color: $color_white;
+      path {
+        fill: $color_white;
+      }
+    }
+
+    .star-icon,
+    .car-icon {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    div {
+      padding: 5px 10px;
+      border-radius: 24px;
+      @include flex;
+      gap: 4px;
+      p {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &-logo {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  &-like__btn {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 -1px 12px rgba(0, 0, 0, 0.08);
+    background-color: $color_white;
+    position: absolute;
+    top: 62%;
+    right: 4%;
+
+    .heart-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

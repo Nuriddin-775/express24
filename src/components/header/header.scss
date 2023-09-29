@@ -5,6 +5,7 @@
   height: 44.8px;
   padding: 0 14px;
   @include flex;
+  border-bottom: 1px solid $color_border;
 
   .arrow-right-icon {
     width: 20px;
